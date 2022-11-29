@@ -49,7 +49,7 @@ def render():
         dictionary = {"Full Name" : fullname, "Email" : email, "Message" : message}
          #You have to create one dictionary format object and insert one row then only you can see table on mongoDb compass
         collection.insert_one(dictionary)
-        print("Inserted Dictionory successfully")
+        print("Inserted Dictionory successfully")   
     return render_template('thankyou.html')  
 
 # @app.route('/thankyou', methods=['GET','POST'])
